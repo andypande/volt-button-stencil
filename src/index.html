@@ -4,14 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil Component Starter</title>
-  <script src="/build/mycomponent.js"></script>
-
+  <script src="build/mycomponent.js"></script>
 </head>
 <body>
-  <torq-button buttontext="Button" buttontype="primary"></torq-button>
-  <torq-button buttontext="Button" buttontype="callToAction"></torq-button>
-  <torq-button buttontext="Button" buttontype="outline"></torq-button>
-  <torq-button buttontext="Button" buttontype="text"></torq-button>
-
+  <main role="main">
+    <h1>Test Buttons</h1>
+    <torq-button buttontype="primary" onClick="alert('primary');">
+      Button
+    </torq-button>
+    <torq-button buttontype="callToAction" onClick="alert('callToAction');">
+      Button
+    </torq-button>
+    <torq-button buttontype="outline" onClick="alert('outline');">
+      Button
+    </torq-button>
+    <torq-button buttontype="text" onClick="alert('text');">
+      Button
+    </torq-button>
+  </main>
 </body>
 </html>

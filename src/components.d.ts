@@ -14,23 +14,15 @@ export namespace Components {
 
   interface TorqButton {
     /**
-    * The text to show inside the button
-    */
-    'buttontext': string;
-    /**
     * Four button choices are: primary, callToAction, outline, and text
     */
-    'buttontype': string;
+    'buttontype': 'primary' | 'callToAction' | 'outline' | 'text';
   }
   interface TorqButtonAttributes extends StencilHTMLAttributes {
     /**
-    * The text to show inside the button
-    */
-    'buttontext'?: string;
-    /**
     * Four button choices are: primary, callToAction, outline, and text
     */
-    'buttontype'?: string;
+    'buttontype'?: 'primary' | 'callToAction' | 'outline' | 'text';
   }
 }
 
